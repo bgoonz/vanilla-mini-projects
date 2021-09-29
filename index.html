@@ -559,6 +559,40 @@
       }
 
       li {
+        display: inline;
+      }
+
+      a {
+        outline: none;
+        text-decoration: none;
+        display: inline-block;
+        width: 19.5%;
+        margin-right: 0.625%;
+        text-align: center;
+        line-height: 3;
+        color: black;
+      }
+
+      li:last-child a {
+        margin-right: 0;
+      }
+
+      a:link,
+      a:visited,
+      a:focus {
+        background: rgba(70, 200, 255, 0.131);
+      }
+
+      a:hover {
+        background: orange;
+      }
+
+      a:active {
+        background: red;
+        color: white;
+      }
+
+      li {
         list-style-type: upper-roman;
         border: 1px solid black !important;
         font-size: 20px;

@@ -4,26 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>JS + CSS Clock</title>
-</head>
-
-<body>
-  <center>
-    <h1><a href="https://bgoonz.github.io/vanilla-mini-projects/"></a></h1>
-  </center>
-
-
-  <div class="clock">
-    <div class="clock-face">
-      <div class="hand hour-hand">
-      </div>
-      <div class="hand min-hand">
-      </div>
-      <div class="hand second-hand">
-      </div>
-    </div>
-  </div>
-
-
   <style>
     html {
       background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
@@ -77,6 +57,29 @@
       transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     }
   </style>
+
+</head>
+
+<body>
+  <center>
+    <ul>
+      <li><a id="home" style="z-index:-1; color:red; font-size: x-large; font-weight:900;"
+          href="https://bgoonz.github.io/vanilla-mini-projects/">HOME</a></li>
+    </ul>
+  </center>
+
+
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand">
+      </div>
+      <div class="hand min-hand">
+      </div>
+      <div class="hand second-hand">
+      </div>
+    </div>
+  </div>
+
 
   <script>
     const secondHand = document.querySelector( '.second-hand' );

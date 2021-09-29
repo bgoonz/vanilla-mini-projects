@@ -16,12 +16,14 @@
         margin: auto;
         width: 98%;
         margin: auto;
+        border-radius: 25px;
       }
 
       /* General styles */
       ul {
         padding-left: 2rem;
         list-style-type: none;
+        border-radius: 25px;
       }
 
       ul li {
@@ -30,11 +32,484 @@
         background-position: 0 0;
         background-size: 1.6rem 1.6rem;
         background-repeat: no-repeat;
+        border-radius: 25px;
       }
 
       html {
         font-family: Helvetica, Arial, sans-serif;
         font-size: 10px;
+      }
+
+      ul.prev-next {
+        display: none !important
+      }
+
+      .main-page-content,
+      .main-page-content pre {
+        padding: 2px
+      }
+
+      .main-page-content pre {
+        border-left-width: 2px
+      }
+
+      .fancybox-margin {
+        margin-right: 0px;
+      }
+
+      .token.cdata,
+      .token.comment,
+      .token.doctype,
+      .token.prolog,
+      .token.punctuation {
+        color: #626262
+      }
+
+      .token.namespace {
+        opacity: .7
+      }
+
+      .token.boolean,
+      .token.constant,
+      .token.deleted,
+      .token.number,
+      .token.property,
+      .token.symbol,
+      .token.tag {
+        color: #95353a
+      }
+
+      .token.attr-name,
+      .token.builtin,
+      .token.char,
+      .token.inserted,
+      .token.selector,
+      .token.string {
+        color: #276738
+      }
+
+      .language-css .token.string,
+      .style .token.string,
+      .token.entity,
+      .token.operator,
+      .token.url {
+        color: #212121
+      }
+
+      .token.atrule,
+      .token.attr-value,
+      .token.keyword {
+        color: #00458b
+      }
+
+      .token.class-name,
+      .token.function {
+        color: #b54248
+      }
+
+      .token.important,
+      .token.regex,
+      .token.variable {
+        color: #c25100
+      }
+
+      .token.bold,
+      .token.important {
+        font-weight: 700
+      }
+
+      .token.italic {
+        font-style: italic
+      }
+
+      .token.entity {
+        cursor: help
+      }
+
+      *,
+      :after,
+      :before {
+        box-sizing: border-box
+      }
+
+      ol[class],
+      ul[class] {
+        padding: 0
+      }
+
+      blockquote,
+      body,
+      dd,
+      dl,
+      figcaption,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      li,
+      ol[class],
+      p,
+      ul[class] {
+        margin: 0
+      }
+
+      body {
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+        background:
+          repeating-radial-gradient(circle at 0 0,
+            rgba(0, 0, 0, 0.014),
+            rgba(255, 255, 255, 0.035) 50px);
+      }
+
+      ol[class],
+      ul[class] {
+        list-style: none
+      }
+
+      a:not([class]) {
+        -webkit-text-decoration-skip: ink;
+        text-decoration-skip-ink: auto
+      }
+
+      img {
+        max-width: 100%;
+        display: block
+      }
+
+      article>*+* {
+        margin-top: 1em
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit
+      }
+
+      @media(prefers-reduced-motion:reduce) {
+        * {
+          animation-duration: .01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: .01ms !important;
+          scroll-behavior: auto !important
+        }
+      }
+
+      html {
+        background-color: #fff;
+        box-sizing: border-box;
+        color: #212121
+      }
+
+      body {
+        font-family: arial, x-locale-body, sans-serif;
+        letter-spacing: -.0027777778rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 100%;
+        line-height: 1.75
+      }
+
+      img {
+        height: auto
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: zillaslab;
+        font-style: normal;
+        font-weight: 700;
+        src: url(/static/media/ZillaSlab-Bold.subset.0beac26b.woff2) format("woff2"),
+          url(/static/media/ZillaSlab-Bold.subset.72026b3c.woff) format("woff")
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: zillaslab;
+        font-style: normal;
+        font-weight: 400;
+        src: url(/static/media/ZillaSlab-Regular.subset.ce3a756d.woff2) format("woff2"),
+          url(/static/media/ZillaSlab-Regular.subset.7e4c05c9.woff) format("woff")
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: zillaslab, palatino, "Palatino Linotype", serif;
+        line-height: 1.2
+      }
+
+      h1 {
+        font-size: 1.802rem
+      }
+
+      @media (min-width:47.9385em) {
+        h1 {
+          font-size: 3.052rem
+        }
+      }
+
+      h2 {
+        font-size: 1.602rem
+      }
+
+      @media (min-width:47.9385em) {
+        h2 {
+          font-size: 2.441rem
+        }
+      }
+
+      h3 {
+        font-size: 1.424rem;
+
+        color: #fff;
+        font-family: zillaslab, palatino, "Palatino Linotype", serif;
+        font-weight: 400;
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
+        max-width: max-content;
+        padding: 0 6px;
+        margin: 24px 0
+      }
+
+      @media (min-width:47.9385em) {
+        h3 {
+          font-size: 1.953rem
+        }
+      }
+
+      h4 {
+        font-size: 1.266rem
+      }
+
+      @media (min-width:47.9385em) {
+        h4 {
+          font-size: 1.563rem
+        }
+      }
+
+      h5 {
+        font-size: 1.125rem
+      }
+
+      @media (min-width:47.9385em) {
+        h5 {
+          font-size: 1.25rem
+        }
+      }
+
+      p {
+        margin-bottom: 24px
+      }
+
+      .smaller-text {
+        font-size: .9rem
+      }
+
+      .tiny-text {
+        font-size: .75rem
+      }
+
+      .slab-highlight {
+        background-color: whitesmoke;
+        color: #fff;
+        font-family: zillaslab, palatino, "Palatino Linotype", serif;
+        font-weight: 400;
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
+        max-width: max-content;
+        padding: 0 6px
+      }
+
+      .readable-line-length {
+        max-width: 45rem;
+        max-width: 85ch
+      }
+
+      a:link,
+      a:visited {
+        color: #00458b;
+        text-decoration: none
+      }
+
+      a:link:active,
+      a:link:focus,
+      a:link:hover,
+      a:visited:active,
+      a:visited:focus,
+      a:visited:hover {
+        text-decoration: underline
+      }
+
+      blockquote {
+        max-width: 45rem;
+        max-width: 85ch;
+        font-size: 1.125rem;
+        font-family: zillaslab, palatino, "Palatino Linotype", serif;
+        font-weight: 400;
+        margin-bottom: 24px
+      }
+
+      @media (min-width:47.9385em) {
+        blockquote {
+          font-size: 1.25rem
+        }
+      }
+
+      blockquote:after,
+      blockquote:before {
+        background-image: linear-gradient(90deg, #00458b, #83d0f2);
+        content: "";
+        display: block;
+        height: 5px;
+        margin-bottom: 12px
+      }
+
+      blockquote:after {
+        margin-top: 12px
+      }
+
+      blockquote p:last-of-type {
+        margin-bottom: 0
+      }
+
+      a {
+        color: #00458b;
+        text-decoration: none
+      }
+
+      a:focus,
+      a:hover {
+        text-decoration: underline
+      }
+
+      a code {
+        -webkit-text-decoration-skip-ink: none;
+        text-decoration-skip-ink: none
+      }
+
+      a.external:after {
+        background: transparent url(/static/media/external.e091ac5d.svg) 0 0 no-repeat;
+        background-size: 16px;
+        content: "";
+        display: inline-block;
+        height: 16px;
+        margin-left: 3px;
+        width: 16px
+      }
+
+      .highlighted-link-state {
+        background-color: #00458b;
+        color: #fff
+      }
+
+      dl dt {
+        font-weight: 700
+      }
+
+      dl dd {
+        margin: 0 24px 24px
+      }
+
+      .flex-list {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 24px;
+        gap: 24px
+      }
+
+      .flex-list.styled {
+        margin: 24px 0;
+        padding-left: 48px
+      }
+
+      .flex-list li {
+        flex-basis: 45%
+      }
+
+      ul.flex-list.styled li {
+        list-style-type: disc
+      }
+
+      ol.flex-list.styled li {
+        list-style-type: decimal
+      }
+
+      .icon {
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 21px;
+        content: "";
+        display: inline-block;
+        height: 21px;
+        margin-right: 6px;
+        vertical-align: sub;
+        width: 21px
+      }
+
+      h2 .icon,
+      h3 .icon,
+      h4 .icon {
+        margin-left: 6px;
+        vertical-align: middle
+      }
+
+      .experimental,
+      .non-standard {
+        fill: #1e7f9d
+      }
+
+      .deprecated,
+      .warning {
+        fill: #b49e35
+      }
+
+      .obsolete {
+        fill: #95353a
+      }
+
+      .callout {
+        background-color: #c2e8f9;
+        border-radius: 6px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin-bottom: 24px;
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
+        max-width: max-content;
+        padding: 24px 24px 0
+      }
+
+      .callout p {
+        max-width: 45rem;
+        max-width: 85ch
+      }
+
+      .callout h4 {
+        font-family: zillaslab, palatino, "Palatino Linotype", serif;
+        background-color: transparent;
+        color: #212121
+      }
+
+      .callout .button {
+        max-width: inherit;
+        width: 100%
+      }
+
+      @media (min-width:47.9385em) {
+        .callout .button {
+          max-width: -webkit-max-content;
+          max-width: -moz-max-content;
+          max-width: max-content;
+          width: inherit
+        }
       }
 
       h2 {
@@ -64,8 +539,12 @@
       }
 
       iframe {
-        width: 100%;
+        background-color: rgba(245, 245, 245, 0.635);
+        width: 95%;
         border-radius: 25px;
+        height: 400px;
+        border: 1px solid gold;
+        box-shadow: gold;
         ;
       }
 
@@ -76,6 +555,7 @@
       ul {
         border: 2px solid black;
         box-shadow: 2px 2px 5px rgb(0, 0, 0);
+        border-radius: 25px;
       }
 
       li {
@@ -131,113 +611,140 @@
     <br>
     <center>
       <ul>
-        <center>
+        <center> <br>
+          <br>
           <iframe src="./index-FINISHED.html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (3).html"> index-FINISHED(3).html</a></li>
+          <li> <a href="./index-FINISHED (3).html"> index-FINISHED(3).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (4).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (4).html"> index-FINISHED(4).html</a></li>
+          <li> <a href="./index-FINISHED (4).html"> index-FINISHED(4).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (5).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (5).html"> index-FINISHED(5).html</a></li>
+          <li> <a href="./index-FINISHED (5).html"> index-FINISHED(5).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (6).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (6).html"> index-FINISHED(6).html</a></li>
+          <li> <a href="./index-FINISHED (6).html"> index-FINISHED(6).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (7).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (7).html"> index-FINISHED(7).html</a></li>
+          <li> <a href="./index-FINISHED (7).html"> index-FINISHED(7).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (8).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (8).html"> index-FINISHED(8).html</a></li>
+          <li> <a href="./index-FINISHED (8).html"> index-FINISHED(8).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (9).html"> </iframe>
           <br>
           <br>
           <li> <a href="./index-FINISHED (9).html"> index-FINISHED(9).html</a></li>
 
-          <li> <a href="./index-FINISHED.html"> index-FINISHED.html</a></li>
+          <li> <a href="./index-FINISHED.html"> index-FINISHED.html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (10).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (10).html"> index-FINISHED(10).html</a></li>
+          <li> <a href="./index-FINISHED (10).html"> index-FINISHED(10).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (11).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (11).html"> index-FINISHED(11).html</a></li>
+          <li> <a href="./index-FINISHED (11).html"> index-FINISHED(11).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (12).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (12).html"> index-FINISHED(12).html</a></li>
+          <li> <a href="./index-FINISHED (12).html"> index-FINISHED(12).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (13).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (13).html"> index-FINISHED(13).html</a></li>
+          <li> <a href="./index-FINISHED (13).html"> index-FINISHED(13).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (14).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (14).html"> index-FINISHED(14).html</a></li>
+          <li> <a href="./index-FINISHED (14).html"> index-FINISHED(14).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (15).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (15).html"> index-FINISHED(15).html</a></li>
+          <li> <a href="./index-FINISHED (15).html"> index-FINISHED(15).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (16).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (16).html"> index-FINISHED(16).html</a></li>
+          <li> <a href="./index-FINISHED (16).html"> index-FINISHED(16).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (17).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (17).html"> index-FINISHED(17).html</a></li>
+          <li> <a href="./index-FINISHED (17).html"> index-FINISHED(17).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (18).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (18).html"> index-FINISHED(18).html</a></li>
+          <li> <a href="./index-FINISHED (18).html"> index-FINISHED(18).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (19).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (19).html"> index-FINISHED(19).html</a></li>
+          <li> <a href="./index-FINISHED (19).html"> index-FINISHED(19).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (2).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (2).html"> index-FINISHED(2).html</a></li>
+          <li> <a href="./index-FINISHED (2).html"> index-FINISHED(2).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (20).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (20).html"> index-FINISHED(20).html</a></li>
+          <li> <a href="./index-FINISHED (20).html"> index-FINISHED(20).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (21).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (21).html"> index-FINISHED(21).html</a></li>
+          <li> <a href="./index-FINISHED (21).html"> index-FINISHED(21).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (22).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (22).html"> index-FINISHED(22).html</a></li>
+          <li> <a href="./index-FINISHED (22).html"> index-FINISHED(22).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (23).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (23).html"> index-FINISHED(23).html</a></li>
+          <li> <a href="./index-FINISHED (23).html"> index-FINISHED(23).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (24).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (24).html"> index-FINISHED(24).html</a></li>
+          <li> <a href="./index-FINISHED (24).html"> index-FINISHED(24).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (25).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (25).html"> index-FINISHED(25).html</a></li>
+          <li> <a href="./index-FINISHED (25).html"> index-FINISHED(25).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (26).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (26).html"> index-FINISHED(26).html</a></li>
+          <li> <a href="./index-FINISHED (26).html"> index-FINISHED(26).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (27).html"> </iframe>
           <br>
           <br>
-          <li> <a href="./index-FINISHED (27).html"> index-FINISHED(27).html</a></li>
+          <li> <a href="./index-FINISHED (27).html"> index-FINISHED(27).html</a></li> <br>
+          <br>
           <iframe src="./index-FINISHED (3).html"> </iframe>
           <br>
           <br>
